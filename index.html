@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function pa(str) {
+            const len = str.length;
+
+            for (i = 0; i < len / 2; i++) {
+                if (str[i] !== str[len - 1 - i]) {
+                    alert("not a palindrom");
+                }
+            }
+            alert("it is palindrom");
+        }
+
+        const str = prompt("Enter a string or number");
+        pa(str);
+    </script>
+</body>
+
+</html>
